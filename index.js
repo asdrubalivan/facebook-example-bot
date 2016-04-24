@@ -5,8 +5,8 @@ var KEY = require('./constants').KEY;
 var _ = require('lodash');
 var sendTextMessage = require('./functions').sendTextMessage;
 
-app.use(bodyParser.urlencoded());
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', function (req, res) {
   res.send('Hello World!');
 });
