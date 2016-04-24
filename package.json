@@ -8,11 +8,12 @@
     "start": "node index.js"
   },
   "engines": {
-      "node": "5.2.0"
+    "node": "5.2.0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "lodash": "^4.11.1",
     "request": "^2.72.0"
